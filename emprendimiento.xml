@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.0.2
+- https://www.phpmyadmin.net
+-
+- Servidor: 127.0.0.1:3306
+- Tiempo de generación: 06-07-2021 a las 23:42:59
+- Versión del servidor: 5.7.31
+- Versión de PHP: 7.3.21
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="productores" collation="utf8_general_ci" charset="utf8">
+            <pma:table name="emprendimiento">
+                CREATE TABLE `emprendimiento` (
+                  `idemprendimiento` int(11) NOT NULL AUTO_INCREMENT,
+                  `nombre_emp` varchar(45) DEFAULT NULL,
+                  `productos` varchar(100) DEFAULT NULL,
+                  `rubro` varchar(20) NOT NULL,
+                  `redsocial` varchar(45) DEFAULT NULL,
+                  `direccion` varchar(45) DEFAULT NULL,
+                  `celular` varchar(30) NOT NULL,
+                  `socio_1` varchar(40) NOT NULL,
+                  `socio_2` varchar(40) NOT NULL,
+                  `mail` varchar(40) NOT NULL,
+                  PRIMARY KEY (`idemprendimiento`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=101 DEFAULT CHARSET=utf8;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Base de datos: 'productores'
+    -->
+    <database name="productores">
+        <!-- Tabla emprendimiento -->
+        <table name="emprendimiento">
+            <column name="idemprendimiento">100</column>
+            <column name="nombre_emp">Dulces Lorena</column>
+            <column name="productos">Alfajores, tartas , pastelitos , pasta frolas </column>
+            <column name="rubro">Artesanias</column>
+            <column name="redsocial">Facebook</column>
+            <column name="direccion">Quines </column>
+            <column name="celular">2664164331</column>
+            <column name="socio_1">Tello mercedes lorena </column>
+            <column name="socio_2"></column>
+            <column name="mail">ludjanna@gmail.com</column>
+        </table>
+    </database>
+</pma_xml_export>
